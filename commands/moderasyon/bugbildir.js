@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const Discord = require("discord.js");
+const config = require("../../config.js")
 
 module.exports = {
   name: "bugbildir",
@@ -21,7 +22,7 @@ module.exports = {
 const owner = client.users.cache.get('264142213833949184');
     
     const query = args.join(" ");
-    if(!query) return message.reply('Lütfen bir sorun belirtin.');
+    if(!query) return message.reply(`Lütfen bir sorun belirtin. Doğru kullanım \`${config.DefaultPrefix}bugbildir(belirtmek istediğiniz sorun)\` `);
   
     const reportEmbed = new MessageEmbed()
     .setColor('RANDOM')
