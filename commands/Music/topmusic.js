@@ -40,7 +40,7 @@ run: async (client, message, args, { GuildDB }) => {
       return message.channel.send("**:x: top-musics kanalı devre dışı bırakılmış**")
     })    
 
-    client.sendTime(message.channel, `<a:SabitGif:821076744303935538> | **🎧⠂top-musics kanalınına ekledim kontrol etmeyi unutma!**`)
+    client.sendTime(message.channel, `<a:SabitGif:821076744303935538> | **🎧⠂top-musics | 🎶⠂repertuar kanalınına ekledim kontrol etmeyi unutma!**`)
   },
   SlashCommand: {
 /**
