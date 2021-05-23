@@ -1,0 +1,66 @@
+{
+  "name": "discord-musicbot",
+  "version": "4.0.0",
+  "description": "Very simple discord music bot with the discord.js with Song Name playing. It can able to play music with the song name",
+  "main": "index.js",
+  "scripts": {
+    "install-node-v14": "wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash && export NVM_DIR=\"$([ -z \"${XDG_CONFIG_HOME-}\" ] && printf %s \"${HOME}/.nvm\" || printf %s \"${XDG_CONFIG_HOME}/nvm\")\" && [ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\" && nvm install 14 && nvm use 14",
+    "start": "node index",
+    "rm-logs": "rm Logs.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudhanPlayz/Discord-MusicBot.git"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discord-musicbot",
+    "music",
+    "discord-music"
+  ],
+  "author": "SudhanPlayz",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/SudhanPlayz/Discord-MusicBot/issues"
+  },
+  "homepage": "https://github.com/SudhanPlayz/Discord-MusicBot#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "colors": "^1.4.0",
+    "common-tags": "^1.8.0",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^12.5.3",
+    "discord.js-commando": "^0.12.3",
+    "erela.js": "^2.3.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsoning": "^0.10.21",
+    "lavasfy": "^2.2.1",
+    "lodash": "^4.17.21",
+    "lyrics-finder": "^21.7.0",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^5.12.7",
+    "node-fetch": "^2.6.1",
+    "npm.db": "^2.0.7",
+    "os": "^0.1.1",
+    "passport": "^0.4.1",
+    "passport-discord": "^0.1.4",
+    "pnpm": "^6.4.0",
+    "prebuild-install": "^6.1.2",
+    "pretty-ms": "^7.0.1",
+    "socket.io": "^4.0.1",
+    "speedtest-net": "^2.1.2",
+    "sqlite3": "^5.0.2",
+    "user-instagram": "^2.1.8",
+    "winston": "^3.3.3",
+    "quick.db": "^7.1.2"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
+}
