@@ -58,7 +58,6 @@ client.on('guildCreate', guild => {
 .setAuthor(`${guild.name} Adlı Sunucuya ${client.user.username} başarıyla eklendi`,"https://media.giphy.com/media/lNLVInp4Tx3BLnR6Nx/giphy.gif")
 .setThumbnail(client.user.avatarURL())
 .setDescription(`**Beni sunucuna eklediğin için teşekkürler! Kullanım ve komutlar için \`*help\` veya \`*yardım\` yazman yeterli iyi eğlenceler!  
-
 Thanks for adding me to the server! For usage and commands, just write \`*help\` or \`*yardım\` have fun!**`)
 .setTimestamp()
 .setFooter("© 2021 Developed by EmreeK-Odinex🔸#5614", client.user.avatarURL())
