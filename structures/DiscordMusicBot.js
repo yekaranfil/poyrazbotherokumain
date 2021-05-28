@@ -145,15 +145,15 @@ class DiscordMusicBot extends Client {
     let TrackStartedEmbed = new MessageEmbed()
       
 
-          .setAuthor("Şimdi oynuyor","https://media.giphy.com/media/lNLVInp4Tx3BLnR6Nx/giphy.gif" )
-          .setThumbnail(player.queue.current.displayThumbnail())
-          .setDescription(`[${track.title}](${track.uri})`,"<a:dorulama:821077131168972821>")
-          .addField("Tarafından talep edildi", `${track.requester}`, true,)
-          .addField("Süresi", `\`${prettyMilliseconds(track.duration, {colonNotation: true})}\``, true)
-          .setColor("#00ced1")
-          //.setFooter("Started playing at");
-        let NowPlaying = await client.channels.cache.get(player.textChannel).send(TrackStartedEmbed);
-        player.setNowplayingMessage(NowPlaying)
+      .setAuthor("Şimdi oynuyor","https://media.giphy.com/media/lNLVInp4Tx3BLnR6Nx/giphy.gif" )
+      .setThumbnail(player.queue.current.displayThumbnail())
+      .setDescription(`[${track.title}](${track.uri})`,"<a:dorulama:821077131168972821>")
+      .addField("Talep eden", `${track.requester}`, true,)
+      .addField("Süresi - Ses düzeyi", `\`${prettyMilliseconds(track.duration, {colonNotation: true})} - Volume ${player.volume}\``, true)
+      .setColor("#00ced1")
+      //.setFooter("Started playing at");
+    let NowPlaying = await client.channels.cache.get(player.textChannel).send(TrackStartedEmbed);
+    player.setNowplayingMessage(NowPlaying)
       })
     
       .on("queueEnd", async (player) => {
