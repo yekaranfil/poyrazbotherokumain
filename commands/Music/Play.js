@@ -34,7 +34,7 @@ module.exports = {
         let CheckNode = client.Manager.nodes.get(client.config.Lavalink.id);
         let Searching = await message.channel.send("<a:YklenmeGif:821076739207069706> Aranıyor...");
         if (!CheckNode || !CheckNode.connected) {
-       return client.sendTime(message.channel,"❌ | **Lavalink node not connected**");
+       return client.sendTime(message.channel,"❌ | **Lavalink node sunucuya bağlanamadı lütfen bunu *bugbildir ile bildirin**");
           }
 
         let SongAddedEmbed = new MessageEmbed().setColor("RED");
