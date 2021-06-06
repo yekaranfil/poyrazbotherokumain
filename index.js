@@ -95,9 +95,13 @@ client.on('ready', () => {
 .setThumbnail(member.user.avatarURL)
 .setDescription(`** \`${member.user.username}\` Sunucuya hoş geldin <a:ElSallamaGif:821076749164871680> seninle beraber \`${member.guild.memberCount}\` kişiye ulaştık. **`)
  //        .addField(`:id: Üye ID:`, `${member.id}`, true)
-.addField(` <a:raninbowp:821077131362566205> Katılan üye Adı`, `${member}`, true)
-.addField(` <a:raninbowp:821077131362566205> Davet eden kişi`, `${usedInvite.inviter}`,true )
-.addField(`Bu davet kodu ${usedInvite.uses} kere kullanılmış.`, `<a:Mee6LevelUpGif:821076739496738936><a:Mee6LevelUpGif:821076739496738936>`)
+ .addFields(
+  { name: ` <a:raninbowp:821077131362566205> Katılan üye Adı`, value: `${member}`, inline: true },
+  { name: ` <a:raninbowp:821077131362566205> Davet eden kişi`, value: `${usedInvite.inviter}`, inline: true },
+  { name: `Discorda katılma tarihi`, value: ` \`${member.user.createdAt.toLocaleString()}\` `,inline: true },
+  { name: `Sunucuya Katılma Tarihi`, value:` \`${member.joinedAt.toLocaleString()}\` `,inline: true},
+  { name: `Bu davet kodu \`${usedInvite.uses}\` kere kullanılmış.`, value: `davet kodu: \`${usedInvite.url}\` `,inline: true },
+)
 .setTimestamp()
 .setFooter(`© 2021 ${client.user.username} Sayaç sistemi `, client.user.avatarURL())
 client.channels.cache.get(channel).send(maze) 
