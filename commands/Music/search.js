@@ -26,7 +26,7 @@ module.exports = {
         let SearchString = args.join(" ");
         if (!SearchString) return client.sendTime(message.channel, `**Kullanım - **\`${GuildDB.prefix}search [Şarkı ismi | Şarkı URL]\``);
 
-        let Searching = await message.channel.send("<a:YklenmeGif:821076739207069706> Aranıyor...");
+        let Searching = await message.channel.send("<a:CWS_GoogleAssistant:853730537192947732>  Aranıyor... <:yt:853732706202288128>");
             let CheckNode = client.Manager.nodes.get(client.config.Lavalink.id);
         if (!CheckNode || !CheckNode.connected) {
         return client.sendTime(
