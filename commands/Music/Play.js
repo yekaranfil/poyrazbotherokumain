@@ -27,7 +27,7 @@ module.exports = {
       
         if (!message.member.voice.channel) return client.sendTime(message.channel, "❌ | **Bir şeyler çalmak için bir ses kanalında olmalısınız!**");
         //else if(message.guild.me.voice && message.guild.me.voice.channel.id !== message.member.voice.channel.id)return client.sendTime(message.channel, "❌ | **You must be in same voice channel as the bot is in to play something!**");
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return client.sendTime(message.channel, `❌ | ${message.guild.me.voice.channel} **:exclamation:KANALINDA AKTİFİM LÜTFEN ORADA KULLANIN YA DA \`${GuildDB.prefix}leave\` kullanın ardından şarkıyı açın.:exclamation:**- **Bir şeyler çalmak için benimle aynı ses kanalında olmalısınız! - *join kullanınız **`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return client.sendTime(message.channel, `❌ | ${message.guild.me.voice.channel} **:exclamation:KANALINDA AKTİFİM LÜTFEN ORADA KULLANIN YA DA \`${GuildDB.prefix}leave\` kullanın ardından şarkıyı açın.:exclamation:**- **Bir şeyler çalmak için benimle aynı ses kanalında olmalısınız! - **`);
         let SearchString = args.join(" ");
         if (!SearchString) return client.sendTime(message.channel, `**Usage - **\`${GuildDB.prefix}play [Song Name|Song URL]\``); //et Searching = await message.channel.send("<a:YklenmeGif:821076739207069706> Aranıyor...");
         
