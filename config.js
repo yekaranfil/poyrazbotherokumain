@@ -21,7 +21,7 @@ module.exports = {
     host: "fn.darrennathanael.com",
     port: 2095,
     pass: "whatwasthelastingyousaid",
-    
+    secure: false,
   },
 
   //Please go to https://developer.spotify.com/dashboard/
