@@ -40,6 +40,7 @@ run: async (client, message, args, { GuildDB }) => {
       return message.channel.send("**:x: top-musics kanalı devre dışı bırakılmış**")
     
   })
+  // fight top music
     client.channels.cache.get("846151108027351101").send(new MessageEmbed()
    .setAuthor(`KAYDEDİLEN ŞARKI :`, client.user.displayAvatarURL({
     dynamic: true
@@ -57,6 +58,26 @@ run: async (client, message, args, { GuildDB }) => {
     ).catch(e=>{
       return message.channel.send("**:x: top-musics kanalı devre dışı bırakılmış**")
     })
+
+
+    // lamartune top music
+  client.channels.cache.get("885279888423124992").send(new MessageEmbed()
+  .setAuthor(`KAYDEDİLEN ŞARKI :`, client.user.displayAvatarURL({
+  dynamic: true
+  }))
+  .setImage(`https://img.youtube.com/vi/${player.queue.current.identifier}/mqdefault.jpg`)
+  .setURL(player.queue.current.uri)
+  .setColor("YELLOW")
+  .setTitle(`**${player.queue.current.title}**`)
+  .addField("<a:rengarenklamar:857421053624844308> Oynatma uzantısı(direk kopyalayın):", `\`${GuildDB ? GuildDB.prefix : client.config.DefaultPrefix
+  }play ${player.queue.current.uri}\``)
+  .addField(`🔎 Kaydedildiği kanal:`, `<#${message.channel.id}>`)
+  .setFooter(`Ekleyen: ${player.queue.current.requester.tag} | Sunucu: ${message.guild.name}`, player.queue.current.requester.displayAvatarURL({
+  dynamic: true
+  }))
+  ).catch(e=>{
+   return message.channel.send("**:x: top-musics kanalı devre dışı bırakılmış**")
+ })
 
     client.sendTime(message.channel, `<a:SabitGif:821076744303935538> | **🎧⠂top-musics | 🎶⠂repertuar kanalınına ekledim kontrol etmeyi unutma!**`)
   },
