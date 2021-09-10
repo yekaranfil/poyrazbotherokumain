@@ -20,7 +20,6 @@ specifiers:
   pnpm: ^6.2.5
   prettier: 2.2.1
   pretty-ms: ^7.0.1
-  twemoji-parser: ^13.1.0
   socket.io: ^4.0.1
   winston: ^3.3.3
 
@@ -42,7 +41,6 @@ dependencies:
   passport: 0.4.1
   passport-discord: 0.1.4
   pnpm: 6.2.5
-  twemoji-parser: 13.1.0
   pretty-ms: 7.0.1
   socket.io: 4.0.1
   winston: 3.3.3
@@ -1190,10 +1188,7 @@ packages:
     resolution: {integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==}
     dev: false
 
-   /twemoji-parser/13.1.0:
-    resolution: {integrity: sha512-AQOzLJpYlpWMy8n+0ATyKKZzWlZBJN+G0C+5lhX7Ftc2PeEVdUU/7ns2Pn2vVje26AIZ/OHwFoUbdv6YYD/wGg==}
-    dev: false
-    
+
   /type-is/1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
