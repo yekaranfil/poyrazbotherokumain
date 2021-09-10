@@ -58,7 +58,7 @@
     "sqlite3": "^5.0.2",
     "user-instagram": "^2.1.8",
     "winston": "^3.3.3",
-    "quick.db": "^7.1.2",
+    "quick.db": "^7.1.2"
     
   },
   "devDependencies": {
