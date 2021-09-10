@@ -6,7 +6,7 @@ const permler = {
     "ADMINISTRATOR": "Yönetici",
     "CREATE_INSTANT_INVITE": "Davet Oluştur",
     "KICK_MEMBERS": "Üyeleri At",
-    "BAN_MEMBERS": "Üyeleri Yasakla",
+    "BAN_MEMBERS": "Üyeleri Yasakla ",
     "MANAGE_CHANNELS": "Kanalları Yönet",
     "MANAGE_GUILD": "Sunucuyu Yönet",
     "ADD_REACTIONS": "Tepki Ekle",
