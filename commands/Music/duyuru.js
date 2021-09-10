@@ -48,7 +48,7 @@ run: async (client, message, args, { GuildDB }) => {
   
   
   // lamartune 
-  client.channels.cache.get("675680828893954053").send("<a:RainbowOkGif:821076727480320070> @everyone BUG FİXED @here <a:SolRainbowokGif:821076730823442463>")
+  client.channels.cache.get("751127807182241952").send("<a:RainbowOkGif:821076727480320070> @everyone BUG FİXED @here <a:SolRainbowokGif:821076730823442463>")
     client.channels.cache.get("751127807182241952").send(new MessageEmbed()
    .setAuthor(`BUG FİXLENDİ V4.1-POYRAZBOT:`, client.user.displayAvatarURL({
     dynamic: true
@@ -70,7 +70,7 @@ run: async (client, message, args, { GuildDB }) => {
   
   
   //fight club
-  client.channels.cache.get("675680828893954053").send("<a:RainbowOkGif:821076727480320070> @everyone BUG FİXED @here <a:SolRainbowokGif:821076730823442463>")
+  client.channels.cache.get("619077735226146827").send("<a:RainbowOkGif:821076727480320070> @everyone BUG FİXED @here <a:SolRainbowokGif:821076730823442463>")
     client.channels.cache.get("619077735226146827").send(new MessageEmbed()
     .setAuthor(`BUG FİXLENDİ V4.1-POYRAZBOT:`, client.user.displayAvatarURL({
     dynamic: true
