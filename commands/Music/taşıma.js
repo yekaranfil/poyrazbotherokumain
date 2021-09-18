@@ -7,13 +7,12 @@ module.exports = {
   enabled: true,
   guildOnly: true,
   permissions: {
-    member: [],
+    member: ["ADMINISTRATOR"],
   },
   aliases: [],
 
 run : async (client, message, args) => {
-  if (message.author.id !== "264142213833949184")
-    return message.channel.send("Sahibimin Komutu Bu.");
+
   let c = args[0];
   if (!c) return message.channel.send("Kanal ID'si Gir!");
   const voiceChannels = message.guild.channels.cache.filter(
