@@ -78,7 +78,7 @@ module.exports = {
                     SongAddedEmbed.setAuthor(`Plağa Ekliyorum dostum`, client.config.IconURL);
                     SongAddedEmbed.setDescription(`[${Searched.tracks[0].title}](${Searched.tracks[0].uri})`);
                     SongAddedEmbed.addField("Yazar", Searched.tracks[0].author, true);
-                    SongAddedEmbed.addField("Süresi", `\`${prettyMilliseconds(Searched.tracks[0].duration, { colonNotation: true })}\``, true);
+                    //SongAddedEmbed.addField("Süresi", `\`${prettyMilliseconds(Searched.tracks[0].duration, { colonNotation: true })}\``, true);
                     if (player.queue.totalSize > 1) SongAddedEmbed.addField("Sıradaki konumu", `${player.queue.size - 0}`, true);
                     Searching.edit(SongAddedEmbed);
                 } else {
@@ -113,7 +113,7 @@ module.exports = {
             }
         } catch (e) {
             console.log(e);
-            return client.sendTime(message.channel, "** <a:bit:821077129713680394> Oynatıyorum **");
+            return client.sendTime(message.channel, "** <a:bit:821077129713680394> Bir hata ile karşılaştım LÜTFEN TEKRAR AÇINIZ. **");
         }
     },
 
