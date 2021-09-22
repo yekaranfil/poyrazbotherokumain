@@ -113,7 +113,7 @@ module.exports = {
             }
         } catch (e) {
             console.log(e);
-            return client.sendTime(message.channel, "** <a:bit:821077129713680394> Bir hata ile karşılaştım LÜTFEN TEKRAR AÇINIZ. **");
+            return client.sendTime(message.channel, `** <a:bit:821077129713680394> ${track.requester} Bir hata ile karşılaştım LÜTFEN TEKRAR AÇINIZ. **`);
         }
     },
 
