@@ -75,7 +75,7 @@ module.exports = {
                 } else if (Searched.loadType.startsWith("TRACK")) {
                     player.queue.add(TrackUtils.build(Searched.tracks[0], message.author));
                     if (!player.playing && !player.paused && !player.queue.size) player.play();
-                    SongAddedEmbed.setAuthor(`Spotify™dan Plağa Ekliyorum dostum`, "https://cdn.discordapp.com/attachments/751379481536757843/898160728635240459/asdasdass.gif");
+                    SongAddedEmbed.setAuthor(`Spotify™dan Plağa Ekliyorum dostum`, "https://c.tenor.com/5Jqek_mv7BEAAAAd/spotify-logo.gif");
                     //SongAddedEmbed.setDescription(`[${Searched.tracks[0].title}](${Searched.tracks[0].uri})`);
                     //SongAddedEmbed.addField("Yazar", Searched.tracks[0].author, true);
                     //SongAddedEmbed.addField("Süresi", `\`${prettyMilliseconds(Searched.tracks[0].duration, { colonNotation: true })}\``, true);
