@@ -7,7 +7,7 @@ module.exports = {
   usage: "",
   permissions: {
     channel: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS"],
-    member: [],
+    member: ["ADMINISTRATOR"],
   },
   aliases: ["d"],
 /**
