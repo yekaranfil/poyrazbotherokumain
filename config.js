@@ -19,7 +19,7 @@ module.exports = {
   Lavalink: {
     id: "main",
     host: "lavalink.pumpdev.org",
-    port: 3799,
+    port: 3876,
     pass: "pumpisfree",
     secure : false,
     
