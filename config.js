@@ -18,9 +18,9 @@ module.exports = {
   //Lavalink - Already there is a serer to connect :)
   Lavalink: {
     id: "main",
-    host: "lava.devin-dev.xyz",
-    port: 3888,
-    pass: "ayraiscute",
+    host: "linklava.cjstevenson.com",
+    port: 25503,
+    pass: "lookbehindyou",
     secure : false,
     
   },
