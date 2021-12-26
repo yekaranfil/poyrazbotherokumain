@@ -23,7 +23,7 @@ module.exports = {
          if (!message.member.voice.channel) return client.sendTime(message.channel, "❌ | **Bu komutu kullanmak için bir ses kanalında olmalısınız!**");
          if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return client.sendTime(message.channel, ":x: | **Bu komutu kullanmak için benimle aynı ses kanalında olmalısınız!**");
         let vol = parseInt(args[0].value)        
-        if (!parseInt(!vol || vol < 1 || vol > 250)) return message.channel.send("Lütfen 1 - 100 arasında seçim yapın");
+        if (!parseInt(!vol || vol < 1 && vol > 250)) return message.channel.send("Lütfen 1 - 100 arasında seçim yapın");
         player.setVolume(vol);
         message.channel.send(`🔉 | Ses düzeyi ayarlandı \`${player.volume}\``);
     },
