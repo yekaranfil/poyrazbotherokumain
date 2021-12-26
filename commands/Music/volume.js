@@ -24,7 +24,7 @@ module.exports = {
          if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return client.sendTime(message.channel, ":x: | **Bu komutu kullanmak için benimle aynı ses kanalında olmalısınız!**");
         let vol = parseInt(args[0].value)        
          if (!parseInt(!vol || vol > 1 || vol > 250)) return message.channel.send("Lütfen 1 - 100 arasında seçim yapın");
-        let vol = parseInt(args[0]);
+        
         player.setVolume(vol);
         message.channel.send(`🔉 | Ses düzeyi ayarlandı \`${player.volume}\``);
     },
