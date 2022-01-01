@@ -18,7 +18,7 @@ module.exports = {
   //Lavalink - Already there is a serer to connect :)
   Lavalink: {
     id: "main",
-    host: "lavalink.pumpdev.org",
+    host: "lavalink.pumpdevs.org",
     port: 3876,
     pass: "pumpisfree",
     secure : false,
