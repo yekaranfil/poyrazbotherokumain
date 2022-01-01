@@ -34,7 +34,7 @@ module.exports = {
         let CheckNode = client.Manager.nodes.get(client.config.Lavalink.id);
         let Searching = await message.channel.send("<a:CWS_GoogleAssistant:853730537192947732>  Aranıyor... <:yt:853732706202288128>");
         if (!CheckNode || !CheckNode.connected) {
-       return client.sendTime(message.channel,"❌ | **Lavalink nodeları <:yt:853732706202288128> Youtube sunucusuna bağlanamadı lütfen bunu !bugbildir ile bildirin**");
+       return client.sendTime(message.channel,"❌ | **Lavalink nodeları  <:yt:853732706202288128>  Youtube sunucusuna bağlanamadı lütfen bunu *bugbildir ile bildirin**");
           }
 
         let SongAddedEmbed = new MessageEmbed().setColor("RED");
