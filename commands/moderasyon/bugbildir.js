@@ -22,8 +22,10 @@ module.exports = {
 const owner = client.users.cache.get('264142213833949184');
     
     const query = args.join(" ");
-    if(!query) return message.reply(`Lütfen bir sorun belirtin. Doğru kullanım \`${config.DefaultPrefix}bugbildir(belirtmek istediğiniz sorun)\` `);
-  
+    if(!query) {
+      return message.reply(`Lütfen bir sorun belirtin. Doğru kullanım \`${config.DefaultPrefix}bugbildir(belirtmek istediğiniz sorun)\` `); }
+
+
     const reportEmbed = new MessageEmbed()
     .setColor('RANDOM')
     .setTimestamp()
@@ -34,6 +36,10 @@ const owner = client.users.cache.get('264142213833949184');
     .addField(':credit_card: **Sunucu Kimliği:**', message.guild.id, true)
     .addField(':loudspeaker: **Bildirim:**', query)
     .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
-    owner.send(reportEmbed)
+    owner.send(reportEmbed) 
+    return message.reply("Mesajınız iletildi. Yetkili en kısa zamanda sorunu düzeltecektir.");
+
+  
   },
+
 };
