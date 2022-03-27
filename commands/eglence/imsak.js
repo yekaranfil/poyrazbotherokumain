@@ -52,8 +52,9 @@ run : async (client, message, args) => {
        
         kalansaat = saatData-saat;
         kalansaat = kalansaat-1;
-        kalandakika = 60-minutes;
-        let kalandakika = kalandakika+dakikaData;
+        kalandakika = 60 - minutes;
+        var sonucdakika = kalandakika + dakikaData;
+        
         
 
 
