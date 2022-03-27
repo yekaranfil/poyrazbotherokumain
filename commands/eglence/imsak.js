@@ -14,6 +14,10 @@ module.exports = {
   aliases: ["sahur","Sahur","imsak","İmsak"],
 
 run : async (client, message, args) => {
+    let date_ob = new Date();
+    let hours = date_ob.getHours();
+    let minutes = date_ob.getMinutes();
+
     const city = args[0];
     var saat,dakika;
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
@@ -24,14 +28,15 @@ run : async (client, message, args) => {
             
         }
         
-    }).then(res => {
-        saat = `${res.data.result[0].hour}`;
-        dakika =`${res.data.result[0].min }`;
-        var x = saat.toString();
-        var y = dakika.toString();
+    })
+    
+    
+    .then(res => {
+        
+
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time}.**
-           \`\`\`Kalan Süre: ${x} ${y} \`\`\`
+           \`\`\`Kalan Süre: ${hours} ${minutes} \`\`\`
         `);
 
         message.channel.send(messageEmbed);
