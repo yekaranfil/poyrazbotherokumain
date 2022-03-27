@@ -17,7 +17,7 @@ run : async (client, message, args) => {
     let date_ob = new Date();
     let hours = date_ob.getHours();
     let minutes = date_ob.getMinutes();
-
+    console.log(hours + ":" + minutes);
     const city = args[0];
     var saat,dakika;
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
