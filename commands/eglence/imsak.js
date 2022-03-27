@@ -51,7 +51,7 @@ run : async (client, message, args) => {
         saatData = saatData.charAt(1)
        
         kalansaat= parseInt(saatData)-parseInt(saat);
-        kalansaat = kalansaat-1;
+       
         kalandakika = 60 - parseInt(minutes);
         kalandakika= parseInt(dakikaData) + parseInt(kalandakika);
 
