@@ -18,13 +18,15 @@ run : async (client, message, args) => {
     let hours = date_ob.getHours();
     let minutes = date_ob.getMinutes();
     console.log(hours + ":" + minutes);
+
+
     const city = args[0];
     var saat,dakika;
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
-    axios.get(`https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`, {
+    axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
-            "authorization": ""
+            "authorization": "apikey 1iysmakoIybrglVCfZkbDS:10KxqIwpFNuA0Q12fkHZge"
             
         }
         
