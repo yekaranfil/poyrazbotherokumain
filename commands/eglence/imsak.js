@@ -54,7 +54,7 @@ run : async (client, message, args) => {
         kalansaat = kalansaat-1;
         kalandakika = 60 - minutes;
 
-        kalandakika =
+       
 
 
 
