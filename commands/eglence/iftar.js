@@ -19,7 +19,7 @@ run : async (client, message, args) => {
     axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
-            "authorization": "apikey 7gRVk42Dwd5XefesFuqSH8:0aXoQqqUmOFMxLYHUgFra9"
+            "authorization": "apikey 1iysmakoIybrglVCfZkbDS:10KxqIwpFNuA0Q12fkHZge"
         }
     }).then(res => {
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
