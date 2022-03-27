@@ -48,18 +48,18 @@ run : async (client, message, args) => {
         var saat = imsak.split(":");
         var saatData = saat[0];
         var dakikaData = saat[1];
-        var x = saatData.charAt(1)
+        saatData = saatData.charAt(1)
        
         kalansaat = saatData-saat;
         kalansaat = kalansaat-1;
         kalandakika = 60-minutes;
-        kalandakika = kalandakika+dakikaData;
+        let kalandakika = kalandakika+dakikaData;
         
 
 
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time}.**
-           \`\`\`Kalan Süre: ${kalansaat}:${kalandakika} \`\`\`
+           \`\`\`Kalan Süre: ${}:${kalandakika} \`\`\`
         `);
 
         message.channel.send(messageEmbed);
