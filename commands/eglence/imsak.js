@@ -14,11 +14,17 @@ module.exports = {
   aliases: ["sahur","Sahur","imsak","İmsak"],
 
 run : async (client, message, args) => {
+    var saat,sayac;
     let date_ob = new Date();
     let hours = date_ob.getHours();
     let minutes = date_ob.getMinutes();
     console.log(hours + ":" + minutes);
 
+    saat = hours +3;
+    if(saat > 24) {
+        saat = saat-24;
+    } 
+    
 
     const city = args[0];
     var saat,dakika;
@@ -34,11 +40,11 @@ run : async (client, message, args) => {
     
     
     .then(res => {
+       
         
-
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time}.**
-           \`\`\`Kalan Süre: ${hours} ${minutes} \`\`\`
+           \`\`\`Kalan Süre: ${saat} ${minutes} \`\`\`
         `);
 
         message.channel.send(messageEmbed);
