@@ -55,7 +55,7 @@ run : async (client, message, args) => {
        
 
 
-        if (dakikaData > minutes ) {
+        if (dakikaData < minutes ) {
             kalandakika = 60 - parseInt(minutes);
             kalandakika= parseInt(dakikaData) + parseInt(kalandakika);
         } else {
