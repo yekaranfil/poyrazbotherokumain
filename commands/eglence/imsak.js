@@ -15,6 +15,7 @@ module.exports = {
 
 run : async (client, message, args) => {
     var saat,sayac, imsak;
+    var kalansaat, kalandakika;
     let date_ob = new Date();
     let hours = date_ob.getHours();
     let minutes = date_ob.getMinutes();
@@ -40,16 +41,21 @@ run : async (client, message, args) => {
     
     
     .then(res => {
+
+
         imsak = res.data.result[0].time;
 
         var saat = imsak.split(":");
         var saatData = saat[0];
         var dakikaData = saat[1];
 
-        
+        kalansaat = saatData-saat; 
+        kalandakika = dakikaData-minutes      
+
+
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time}.**
-           \`\`\`Kalan Süre: ${saatData} ${dakikaData} \`\`\`
+           \`\`\`Kalan Süre: ${kalansaat}:${kalandakika} \`\`\`
         `);
 
         message.channel.send(messageEmbed);
