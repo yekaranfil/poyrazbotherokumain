@@ -50,10 +50,10 @@ run : async (client, message, args) => {
         var dakikaData = saat[1];
         saatData = saatData.charAt(1)
        
-        parseInt(kalansaat)= parseInt(saatData)-parseInt(saat);
-        parseInt(kalansaat) = parseInt(kalansaat)-1;
-        parseInt(kalandakika) = 60 - parseInt(minutes);
-        parseInt(kalandakika)= parseInt(dakikaData) + parseInt(kalandakika);
+        kalansaat= parseInt(saatData)-parseInt(saat);
+        kalansaat = parseInt(kalansaat)-1;
+        kalandakika = 60 - parseInt(minutes);
+        kalandakika= parseInt(dakikaData) + parseInt(kalandakika);
 
         
 
@@ -62,7 +62,7 @@ run : async (client, message, args) => {
 
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time}.**
-           \`\`\`Kalan Süre: ${toString.kalansaat}:${toString.kalandakika} \`\`\`
+           \`\`\`Kalan Süre: ${kalansaat}:${kalandakika} \`\`\`
         `);
 
         message.channel.send(messageEmbed);
