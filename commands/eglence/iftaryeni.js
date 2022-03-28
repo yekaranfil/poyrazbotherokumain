@@ -45,7 +45,7 @@ run : async (client, message, args) => {
         iftar_pazar = res.data.results.datetime[6].times.Sunset;
         
         var sonucsaat = parseInt(hours) + 3;
-        if(sonucsaat > 24) {
+        if(sonucsaat > 23) {
             day = parseInt(day) +1 ;
         }
 
