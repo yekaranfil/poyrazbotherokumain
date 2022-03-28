@@ -31,9 +31,8 @@ run : async (client, message, args) => {
     const city = args[0];
 
     let one = `https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`;
-    let two = `https://api.pray.zone/v2/times/this_week.json?city=${city.toLowerCase()}`;
     const istek1 = axios.get(one);
-    const istek2 = axios.get(two);
+   
 
 
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
@@ -55,8 +54,8 @@ run : async (client, message, args) => {
     
     
 
-    
-    
+    let two = `https://api.pray.zone/v2/times/this_week.json?city=${city.toLowerCase()}`;
+    const istek2 = axios.get(two);
     istek2.then(res => {
         iftar_pazartesi = res.data.results.datetime[0].times.Sunset;
         iftar_sali= res.data.results.datetime[1].times.Sunset;
