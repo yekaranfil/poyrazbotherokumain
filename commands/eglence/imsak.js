@@ -70,7 +70,13 @@ run : async (client, message, args) => {
              kalandakika = parseInt(dakikaData) - parseInt(minutes);
              
         }
+        if(saatData > 17 ) {
+            sonsaat = parseInt(sonsaat) - 24;
+        } else {
+            sonsaat = sonsaat;
+        }
 
+        
        
 
         const messageEmbed = new Discord.MessageEmbed()

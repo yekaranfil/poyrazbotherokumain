@@ -60,6 +60,12 @@ run : async (client, message, args) => {
              kalandakika = parseInt(dakikaData) - parseInt(minutes);
              
         }
+
+         if (saatData > saat ) {
+            var yenikalansaat = parseInt(24) - parseInt(saat);
+            kalansaat = parseInt(saatData) + parseInt(yenikalansaat);   
+        }
+        
         var sonsaat = Math.abs(kalansaat);
 
         const messageEmbed = new Discord.MessageEmbed()
