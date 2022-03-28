@@ -64,13 +64,13 @@ run : async (client, message, args) => {
 
         const messageEmbed = new Discord.MessageEmbed()
         .setColor("RED")
+        .setAuthor(`> **${city}** şehri için iftar saati **${res.data.result[0].time}**`,"https://media2.giphy.com/media/YXrqttWfWnCiLv90c6/giphy.gif?cid=790b7611f88b09144de9f89f9725bf2d57bd556c2f64c589&rid=giphy.gif&ct=g")
         .setDescription(`
-           > **${city}**şehri için iftar saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}.**
            \`\`\`İftar Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
         `)
-        .setFooter(`© 2021 ${client.user.username} Vakit  sistemi. `, client.user.avatarURL())
+        .setFooter(`© 2022 ${client.user.username} Vakit  sistemi. `, client.user.avatarURL())
         .setTimestamp()
-        .setThumbnail("https://www.gelisenbeyin.net/img/ramazan-oruc.gif");
+        .setImage("https://www.gelisenbeyin.net/img/ramazan-oruc.gif");
         message.channel.send(messageEmbed);
     }).catch(err => {
         message.channel.send('Bir sorun ortaya çıktı. Komudu doğru kullandığınızdan emin olun.');
