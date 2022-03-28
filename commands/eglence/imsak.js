@@ -49,13 +49,13 @@ run : async (client, message, args) => {
         var saatData = saat1[0];
         var dakikaData = saat1[1];
 
-        if (saatData < 10) {
+        /*if (saatData < 10) {
             saatData = saatData.charAt(1);
         } else {
             saatData = saatData;
 
         }
-        
+        */
        
         kalansaat= parseInt(saatData)-parseInt(saat);
     
@@ -68,11 +68,14 @@ run : async (client, message, args) => {
              
         }
 
-        //var sonsaat = Math.abs(kalansaat);
+        var sonsaat = Math.abs(kalansaat);
 
-        const messageEmbed = new Discord.MessageEmbed().setDescription(`
+        const messageEmbed = new Discord.MessageEmbed()
+
+        .setColor("GREEN")
+        .setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}.**
-           \`\`\`İmsak Vaktine Kalan Süre: ${kalansaat} Saat ${kalandakika} Dakika.\`\`\`
+           \`\`\`İmsak Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
         `);
 
         message.channel.send(messageEmbed);
