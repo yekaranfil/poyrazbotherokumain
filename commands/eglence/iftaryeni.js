@@ -44,37 +44,37 @@ run : async (client, message, args) => {
         iftar_cumartesi = res.data.results.datetime[5].times.Sunset;
         iftar_pazar = res.data.results.datetime[6].times.Sunset;
         
-        if (day == 0 ) {
+        if (day == "Sunday" ) {
             var saat1 = iftar_pazar.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
         }
-        if (day == 1 ) {
+        if (day == "Monday" ) {
             var saat1 = iftar_pazartesi.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
         }
-        if (day == 2 ) {
+        if (day == "Tuesday" ) {
             var saat1 = iftar_sali.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
         }
-        if (day == 3 ) {
+        if (day =="Wednesday" ) {
             var saat1 = iftar_carsamba.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
         }
-        if (day == 4 ) {
+        if (day == "Thursday" ) {
             var saat1 = iftar_persembe.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
         }
-        if (day == 5 ) {
+        if (day == "Friday" ) {
             var saat1 = iftar_cuma.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
         }
-        if (day == 6 ) {
+        if (day == "Saturday" ) {
             var saat1 = iftar_cumartesi.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
