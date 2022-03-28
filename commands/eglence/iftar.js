@@ -42,7 +42,7 @@ run : async (client, message, args) => {
         var saatData = saat1[0];
         var dakikaData = saat1[1];
 
-        if (saatData > 10) {
+        if (saatData < 10) {
             saatData = saatData.charAt(1);
         } else {
             saatData = saatData;
