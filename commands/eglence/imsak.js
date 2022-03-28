@@ -78,7 +78,7 @@ run : async (client, message, args) => {
         .setColor("GREEN")
         .setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}.**
-           \`\`\`İmsak Vaktine Kalan Süre: ${kalansaat} Saat ${kalandakika} Dakika.\`\`\`
+           \`\`\`İmsak Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
         `);
 
         message.channel.send(messageEmbed);
