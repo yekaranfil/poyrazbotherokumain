@@ -28,13 +28,14 @@ run : async (client, message, args) => {
     //} 
     
     const city = args[0];
-
+    if (!city) return message.channel.send('Şehir adı girmelisiniz.');
     axios.get(`https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
                 
         }
         }).then(res => {
+            
               iftar_bugun = res.data.results.datetime[0].times.Sunset;   
               var saat2 = iftar_bugun.split(":");
               var saatDatabg = saat2[0];
@@ -50,7 +51,7 @@ run : async (client, message, args) => {
     
     
 
-    if (!city) return message.channel.send('Şehir adı girmelisiniz.');
+    
     axios.get(`https://api.pray.zone/v2/times/this_week.json?city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
