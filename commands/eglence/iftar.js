@@ -41,7 +41,14 @@ run : async (client, message, args) => {
         var saat1 = iftar.split(":");
         var saatData = saat1[0];
         var dakikaData = saat1[1];
-        saatData = saatData.charAt(1);
+
+        if (saatData > 10) {
+            saatData = saatData.charAt(1);
+        } else {
+            saatData = saatData;
+
+        }
+        
 
         kalansaat= parseInt(saatData)-parseInt(saat);
     
