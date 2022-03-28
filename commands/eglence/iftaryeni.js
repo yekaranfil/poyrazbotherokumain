@@ -29,7 +29,7 @@ run : async (client, message, args) => {
     const city = args[0];
 
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
-    axios.get(`https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`, {
+    axios.get(`https://api.pray.zone/v2/times/this_week.json?city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
             
