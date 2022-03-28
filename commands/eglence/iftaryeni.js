@@ -17,6 +17,7 @@ run : async (client, message, args) => {
     var saat,sayac, imsak;
     var kalansaat, kalandakika;
     let date_ob = new Date();
+    let day = date_ob.getDay();
     let hours = date_ob.getHours();
     let minutes = date_ob.getMinutes();
     console.log(hours + ":" + minutes);
@@ -35,12 +36,54 @@ run : async (client, message, args) => {
             
         }
     }).then(res => {
-        iftarr = res.data.results.datetime[5].times.Sunset;
-        //iftar = res.data.result[0].time;
+        iftar_pazartesi = res.data.results.datetime[0].times.Sunset;
+        iftar_sali= res.data.results.datetime[1].times.Sunset;
+        iftar_carsamba = res.data.results.datetime[2].times.Sunset;
+        iftar_persembe = res.data.results.datetime[3].times.Sunset;
+        iftar_cuma = res.data.results.datetime[4].times.Sunset;
+        iftar_cumartesi = res.data.results.datetime[5].times.Sunset;
+        iftar_pazar = res.data.results.datetime[6].times.Sunset;
+        
+        if (day == 0 ) {
+            var saat1 = iftar_pazar.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
+        if (day == 1 ) {
+            var saat1 = iftar_pazartesi.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
+        if (day == 2 ) {
+            var saat1 = iftar_sali.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
+        if (day == 3 ) {
+            var saat1 = iftar_carsamba.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
+        if (day == 4 ) {
+            var saat1 = iftar_persembe.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
+        if (day == 5 ) {
+            var saat1 = iftar_cuma.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
+        if (day == 6 ) {
+            var saat1 = iftar_cumartesi.split(":");
+            var saatData = saat1[0];
+            var dakikaData = saat1[1];
+        }
 
-        var saat1 = iftarr.split(":");
-        var saatData = saat1[0];
-        var dakikaData = saat1[1];
+
+        //iftar = res.data.result[].time;
+
+        
 
         if (saatData < 10) {
             saatData = saatData.charAt(1);
