@@ -32,10 +32,10 @@ run : async (client, message, args) => {
     axios.get(`https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
-            "authorization": ""
+            
         }
     }).then(res => {
-        iftarr = res.date.time.times.Sunset; 
+        iftarr = res.datetime.times.Sunset; 
         //iftar = res.data.result[0].time;
 
         var saat1 = iftarr.split(":");
