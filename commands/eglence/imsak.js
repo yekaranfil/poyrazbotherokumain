@@ -70,7 +70,7 @@ run : async (client, message, args) => {
              kalandakika = parseInt(dakikaData) - parseInt(minutes);
              
         }
-        if(sonsaat > 17 ) {
+        if(saat > 17 ) {
             sonsaat = parseInt(sonsaat) - 24;
         } else {
             sonsaat = sonsaat;
