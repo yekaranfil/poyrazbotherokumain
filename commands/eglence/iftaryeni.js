@@ -35,7 +35,7 @@ run : async (client, message, args) => {
             
         }
     }).then(res => {
-        iftarr = res.data.result.datetime.times.Sunset; 
+        iftarr = res.data.results.datetime[0].times.Sunset;
         //iftar = res.data.result[0].time;
 
         var saat1 = iftarr.split(":");
