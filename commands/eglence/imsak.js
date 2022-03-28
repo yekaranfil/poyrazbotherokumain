@@ -75,11 +75,14 @@ run : async (client, message, args) => {
 
         const messageEmbed = new Discord.MessageEmbed()
 
-        .setColor("GREEN")
+        .setColor("RED")
         .setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}.**
            \`\`\`İmsak Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
-        `);
+        `)
+        .setFooter(`© 2021 ${client.user.username} Vakit  sistemi. `, client.user.avatarURL())
+        .setTimestamp()
+        .setThumbnail("https://www.gelisenbeyin.net/img/ramazan-oruc.gif");
 
         message.channel.send(messageEmbed);
     }).catch(err => {

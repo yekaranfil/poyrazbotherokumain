@@ -62,11 +62,15 @@ run : async (client, message, args) => {
         }
         var sonsaat = Math.abs(kalansaat);
 
-        const messageEmbed = new Discord.MessageEmbed().setDescription(`
-           > **${city}** şehri için iftar saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}.**
+        const messageEmbed = new Discord.MessageEmbed()
+        .setColor("RED")
+        .setDescription(`
+           > **${city}**şehri için iftar saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}.**
            \`\`\`İftar Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
-        `);
-
+        `)
+        .setFooter(`© 2021 ${client.user.username} Vakit  sistemi. `, client.user.avatarURL())
+        .setTimestamp()
+        .setThumbnail("https://www.gelisenbeyin.net/img/ramazan-oruc.gif");
         message.channel.send(messageEmbed);
     }).catch(err => {
         message.channel.send('Bir sorun ortaya çıktı. Komudu doğru kullandığınızdan emin olun.');
