@@ -122,7 +122,7 @@ run : async (client, message, args) => {
 
         const messageEmbed = new Discord.MessageEmbed()
         .setColor("RED")
-        .setAuthor(`> ${city} şehri için iftar saati ${iftarr}`,"https://media2.giphy.com/media/YXrqttWfWnCiLv90c6/giphy.gif?cid=790b7611f88b09144de9f89f9725bf2d57bd556c2f64c589&rid=giphy.gif&ct=g")
+        .setAuthor(`> ${city} şehri için iftar saati ${saatData}:${dakikaData}`,"https://media2.giphy.com/media/YXrqttWfWnCiLv90c6/giphy.gif?cid=790b7611f88b09144de9f89f9725bf2d57bd556c2f64c589&rid=giphy.gif&ct=g")
         .setDescription(`
            \`\`\`İftar Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
         `)
