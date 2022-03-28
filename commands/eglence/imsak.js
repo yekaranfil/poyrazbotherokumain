@@ -62,7 +62,7 @@ run : async (client, message, args) => {
         kalansaat= parseInt(saatData)-parseInt(saat);
         var sonsaat = Math.abs(kalansaat);
 
-        if(saat > 17 ) {
+        if(saatData < saat) {
             sonsaat = 24 - parseInt(saat);
             sonsaat = parseInt(sonsaat) + parseInt(saatData);
         } else {
@@ -78,6 +78,7 @@ run : async (client, message, args) => {
              
         }
       
+       
 
         
         sonsaat = Math.abs(sonsaat);
