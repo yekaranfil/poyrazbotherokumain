@@ -65,7 +65,7 @@ run : async (client, message, args) => {
 
         const messageEmbed = new Discord.MessageEmbed().setDescription(`
            > **${city}** şehri için imsak saati **${res.data.result[0].time} - Şuan ki saat: ${saat}:${minutes}  .**
-           \`\`\`Kalan Süre:${sonsaat}:${kalandakika}\`\`\`
+           \`\`\`İmsak Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
         `);
 
         message.channel.send(messageEmbed);
