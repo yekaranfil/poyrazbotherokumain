@@ -29,6 +29,24 @@ run : async (client, message, args) => {
     
     const city = args[0];
 
+    axios.get(`https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`, {
+        headers: {
+            "content-type": "application/json",
+                
+        }
+        }).then(res => {
+              iftar_bugun = res.data.results.datetime[0].times.Sunset;   
+              var saat2 = iftar_bugun.split(":");
+              var saatDatabg = saat2[0];
+              var dakikaDatabg = saat2[1];
+    
+        }).catch(err => {
+        message.channel.send('Bir sorun ortaya çıktı2. Komudu doğru kullandığınızdan emin olun.');
+        console.log(err);
+        });
+
+
+
     
     
 
@@ -46,24 +64,6 @@ run : async (client, message, args) => {
         iftar_cuma = res.data.results.datetime[4].times.Sunset;
         iftar_cumartesi = res.data.results.datetime[5].times.Sunset;
         iftar_pazar = res.data.results.datetime[6].times.Sunset;
-        
-    axios.get(`https://api.pray.zone/v2/times/today.json?city=${city.toLowerCase()}`, {
-    headers: {
-        "content-type": "application/json",
-            
-    }
-    }).then(res => {
-          iftar_bugun = res.data.results.datetime[0].times.Sunset;   
-          var saat2 = iftar_bugun.split(":");
-          var saatDatabg = saat2[0];
-          var dakikaDatabg = saat2[1];
-
-    }).catch(err => {
-    message.channel.send('Bir sorun ortaya çıktı2. Komudu doğru kullandığınızdan emin olun.');
-    console.log(err);
-    });
-
-
 
         var sonucsaat = parseInt(hours) + 3;
         if(sonucsaat > saatDatabg) {
