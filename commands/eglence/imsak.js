@@ -77,7 +77,7 @@ run : async (client, message, args) => {
         }
 
         
-       
+        sonsaat = Math.abs(sonsaat);
 
         const messageEmbed = new Discord.MessageEmbed()
         .setColor("RED")
