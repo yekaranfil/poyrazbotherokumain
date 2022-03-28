@@ -44,6 +44,14 @@ run : async (client, message, args) => {
         iftar_cumartesi = res.data.results.datetime[5].times.Sunset;
         iftar_pazar = res.data.results.datetime[6].times.Sunset;
         
+        var sonucsaat = parseInt(hours) + 3;
+        if(sonucsaat > 24) {
+            day = parseInt(day) +1 ;
+        }
+
+
+
+
         if (day == 0 ) {
             var saat1 = iftar_pazar.split(":");
             var saatData = saat1[0];
