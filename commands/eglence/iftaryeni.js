@@ -59,7 +59,7 @@ run : async (client, message, args) => {
           var dakikaDatabg = saat2[1];
 
     }).catch(err => {
-    message.channel.send('Bir sorun ortaya çıktı. Komudu doğru kullandığınızdan emin olun.');
+    message.channel.send('Bir sorun ortaya çıktı2. Komudu doğru kullandığınızdan emin olun.');
     console.log(err);
     });
 
