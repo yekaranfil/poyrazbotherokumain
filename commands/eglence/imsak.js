@@ -60,7 +60,7 @@ run : async (client, message, args) => {
         */
        
         kalansaat= parseInt(saatData)-parseInt(saat);
-        var sonsaat = Math.abs(sonsaat);
+        var sonsaat = Math.abs(kalansaat);
 
         if (dakikaData < minutes ) {
             kalandakika = 60 - parseInt(minutes);
