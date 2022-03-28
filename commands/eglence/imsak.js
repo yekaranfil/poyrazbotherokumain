@@ -48,7 +48,7 @@ run : async (client, message, args) => {
         var saat1 = imsak.split(":");
         var saatData = saat1[0];
         var dakikaData = saat1[1];
-        saatData = saatData.charAt(1)
+        saatData = saatData.charAt(1);
        
         kalansaat= parseInt(saatData)-parseInt(saat);
     
