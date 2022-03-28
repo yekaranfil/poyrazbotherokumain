@@ -38,10 +38,7 @@ run : async (client, message, args) => {
             
         }
         
-    })
-    
-    
-    .then(res => {
+    }).then(res => {
         imsak_pazartesi = res.data.results.datetime[0].times.Imsak;
         imsak_sali= res.data.results.datetime[1].times.Imsak;
         imsak_carsamba = res.data.results.datetime[2].times.Imsak;
@@ -57,43 +54,43 @@ run : async (client, message, args) => {
         }
 
         if (day == 0 ) {
-            var saat1 = iftar_pazar.split(":");
+            var saat1 = imsak_pazar.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
         }
         if (day == 1 ) {
-            var saat1 = iftar_pazartesi.split(":");
+            var saat1 = imsak_pazartesi.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
         }
         if (day == 2 ) {
-            var saat1 = iftar_sali.split(":");
+            var saat1 = imsak_sali.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
         }
         if (day == 3 ) {
-            var saat1 = iftar_carsamba.split(":");
+            var saat1 = imsak_carsamba.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
         }
         if (day == 4 ) {
-            var saat1 = iftar_persembe.split(":");
+            var saat1 = imsak_persembe.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
         }
         if (day == 5 ) {
-            var saat1 = iftar_cuma.split(":");
+            var saat1 = imsak_cuma.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
         }
         if (day == 6 ) {
-            var saat1 = iftar_cumartesi.split(":");
+            var saat1 = imsak_cumartesi.split(":");
             var saatData = saat1[0];
             var dakikaData = saat1[1];
             saatData = saatData.charAt(1);
