@@ -72,7 +72,7 @@ run : async (client, message, args) => {
         }
         if(saat > 17 ) {
             sonsaat = 24 - parseInt(sonsaat);
-            sonsaat = sonsaat + saatData;
+            sonsaat = parseInt(sonsaat) + parseInt(saatData);
         } else {
             sonsaat = sonsaat;
         }
