@@ -11,7 +11,7 @@ module.exports = {
     channel: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS"],
     member: [],
   },
-  aliases: ["sahur","Sahur","imsak","İmsak","SAHUR","İMSAK"],
+  aliases: [],
 
 run : async (client, message, args) => {
     var saat,sayac, imsak;
