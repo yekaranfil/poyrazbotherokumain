@@ -106,13 +106,15 @@ run : async (client, message, args) => {
 
 
         if (saat > saatData  ){
-            if (minutes > dakikaData) {
-                var yenikalansaat = 24 - parseInt(saat);
-                kalansaat = parseInt(saatData) + parseInt(yenikalansaat);   
-            } 
+            var yenikalansaat = 24 - parseInt(saat);
+            kalansaat = parseInt(saatData) + parseInt(yenikalansaat);
             
         } else {
-            kalansaat = kalansaat;
+            if (minutes > dakikaData)  {
+                var yenikalansaat = 24 - parseInt(saat);
+                kalansaat = parseInt(saatData) + parseInt(yenikalansaat);
+            }
+             
         }
     
         if (dakikaData < minutes ) {
