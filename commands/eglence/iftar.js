@@ -87,7 +87,7 @@ run : async (client, message, args) => {
         var sonsaat = Math.abs(kalansaat);
 
         const messageEmbed = new Discord.MessageEmbed()
-        .setColor("RED")
+        .setColor("GREEN")
         .setAuthor(`> ${city} şehri için iftar saati ${res.data.result[0].time}`,"https://media2.giphy.com/media/YXrqttWfWnCiLv90c6/giphy.gif?cid=790b7611f88b09144de9f89f9725bf2d57bd556c2f64c589&rid=giphy.gif&ct=g")
         .setDescription(`
            \`\`\`İftar Vaktine Kalan Süre: ${sonsaat} Saat ${kalandakika} Dakika.\`\`\`
