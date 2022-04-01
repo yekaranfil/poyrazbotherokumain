@@ -28,7 +28,7 @@ run : async (client, message, args) => {
 
 
     const city = args[0];
-    var saat,dakika;
+    var dakika;
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
     axios.get(`https://api.collectapi.com/pray/single?ezan=%C4%B0msak&data.city=${city.toLowerCase()}`, {
         headers: {
