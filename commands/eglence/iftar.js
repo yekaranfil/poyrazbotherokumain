@@ -28,18 +28,6 @@ run : async (client, message, args) => {
     
     const city = args[0];
 
-    if (city=="çanakkale" || city=="Çanakkale") {
-        city=="canakkale"
-    } 
-    else if (city=="Kırşehir" || city=="kırşehir"){
-        city=="kirsehir"
-    } 
-    else if (city=="Adıyaman" || city=="adıyaman"){
-        city=="adiyaman"
-    } 
-    else if (city=="Ağrı" || city=="Ağrı"){
-        city=="agri"
-    } 
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
     axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${city.toLowerCase()}`, {
         headers: {
