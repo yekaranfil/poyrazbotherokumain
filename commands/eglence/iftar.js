@@ -32,7 +32,7 @@ run : async (client, message, args) => {
     const city = args[0];
     String.prototype.turkishToLower = function(){
         var string = this;
-        var letters = { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "c","ç": "c" };
+        var letters = { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "c","ç": "c", "ı": "i" };
         string = string.replace(/(([İIŞĞÜÇÖç]))/g, function(letter){ return letters[letter]; })
         return string.toLowerCase();
     }
