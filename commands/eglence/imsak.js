@@ -28,9 +28,18 @@ run : async (client, message, args) => {
 
 
     const city = args[0];
+
+    String.prototype.turkishToLower = function(){
+        var string = this;
+        var letters = { "İ": "i", "I": "i", "Ş": "s" , "ş": "s", "Ğ": "g", "ğ": "g", "Ü": "u", "Ö": "ö", "Ç": "c","ç": "c", "ı": "i", "Ö":"o", "ö":"o", "ü": "u",};
+        string = string.replace(/(([İIŞĞÜÇÖçıüğöş]))/g, function(letter){ return letters[letter]; })
+        return string.toLowerCase();
+    }
+
+
     var dakika;
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
-    axios.get(`https://api.collectapi.com/pray/single?ezan=%C4%B0msak&data.city=${city.toLowerCase()}`, {
+    axios.get(`https://api.collectapi.com/pray/single?ezan=%C4%B0msak&data.city=${city.turkishToLower()}`, {
         headers: {
             "content-type": "application/json",
             "authorization": "apikey 1iysmakoIybrglVCfZkbDS:10KxqIwpFNuA0Q12fkHZge"
