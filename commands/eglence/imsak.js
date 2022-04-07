@@ -95,7 +95,7 @@ run : async (client, message, args) => {
 
         message.channel.send(messageEmbed);
     }).catch(err => {
-        message.channel.send('Bir sorun ortaya çıktı. Komudu doğru kullandığınızdan emin olun.');
+        message.channel.send('Lütfen Şehir İsimlerinde Türkçe Karakter Kullanmayınız (ğ, ç, ş, ü, ö, ı) Harici Yazınız');
         console.log(err);
     });
 }
