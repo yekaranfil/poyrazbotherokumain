@@ -37,7 +37,7 @@ run : async (client, message, args) => {
     const city = args[0];
     
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
-    axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${turkishToLower(city)}`, {
+    axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${city.turkishToLower()}`, {
         headers: {
             "content-type": "application/json",
             "authorization": "apikey 7gRVk42Dwd5XefesFuqSH8:0aXoQqqUmOFMxLYHUgFra9"
