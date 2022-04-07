@@ -32,8 +32,8 @@ run : async (client, message, args) => {
     const city = args[0];
     String.prototype.turkishToLower = function(){
         var string = this;
-        var letters = { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "c","ç": "c", "ı": "i" };
-        string = string.replace(/(([İIŞĞÜÇÖçı]))/g, function(letter){ return letters[letter]; })
+        var letters = { "İ": "i", "I": "i", "Ş": "s" , "ş": "s", "Ğ": "g",  "": "g", "Ü": "ü", "Ö": "ö", "Ç": "c","ç": "c", "ı": "i", "Ö":"o", "ö":"o" };
+        string = string.replace(/(([İIŞĞÜÇÖçıüğöş]))/g, function(letter){ return letters[letter]; })
         return string.toLowerCase();
     }
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
