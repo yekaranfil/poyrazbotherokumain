@@ -27,15 +27,15 @@ run : async (client, message, args) => {
     //} 
 
 
+    
+    
+    const city = args[0];
     String.prototype.turkishToLower = function(){
         var string = this;
         var letters = { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" };
         string = string.replace(/(([İIŞĞÜÇÖ]))/g, function(letter){ return letters[letter]; })
         return string.toLowerCase();
     }
-    
-    const city = args[0];
-    
     if (!city) return message.channel.send('Şehir adı girmelisiniz.');
     axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${city.turkishToLower()}`, {
         headers: {
