@@ -1,12 +1,14 @@
 
 ## 📝 Tutorial
-<h1 align="center">
-  <br>
-  Egglord
-  <br>
-</h1>
+<div align=center>
 
-<h3 align=center>A fully customizable bot built with <a href=https://github.com/discordjs/discord.js>discord.js</a></h3>
+ [![Discord](https://img.shields.io/discord/658113349384667198.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/nP9nnAzYfF)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Spiderjockey02_Discord-Bot&metric=ncloc)](https://sonarcloud.io/dashboard?id=Spiderjockey02_Discord-Bot)
+[![CodeFactor](https://www.codefactor.io/repository/github/spiderjockey02/discord-bot/badge/master)](https://www.codefactor.io/repository/github/spiderjockey02/discord-bot/overview/master)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=http%3A%2F%2F86.25.177.233%2F)
+[![Crowdin](https://badges.crowdin.net/egglord-discord-bot/localized.svg)](https://crowdin.com/project/egglord-discord-bot)
+  
+</div>
 
 ## 📝 [Support Server](https://discord.gg/RKQFSqh56C)
 Kodla ilgili herhangi bir hata veya sorun mu var? Bu sunucuya katılın sorunuzu sorun. https://discord.gg/RKQFSqh56C
