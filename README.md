@@ -1,13 +1,15 @@
+## 🏴 Bir TuneX digital projesidir..
+![see](https://i.hizliresim.com/93r66og.png)
 
-## 📝 Tutorial
+## 📝 Tanıtım
 <div align=center>
 
- [![Discord](https://img.shields.io/discord/658113349384667198.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/nP9nnAzYfF)
-
+[![Discord](https://img.shields.io/discord/658113349384667198.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/nP9nnAzYfF)
+![Website](https://top.gg/bot/785872572620734504)
   
 </div>
 
-## 📝 [Support Server](https://discord.gg/RKQFSqh56C)
+## 📝 (Destek Sunucusu)[Support Server](https://discord.gg/RKQFSqh56C)
 Kodla ilgili herhangi bir hata veya sorun mu var? Bu sunucuya katılın sorunuzu sorun. https://discord.gg/RKQFSqh56C
 
 **120+** **13** farklı kategoride komutlar ve sayma!
@@ -19,6 +21,10 @@ Kodla ilgili herhangi bir hata veya sorun mu var? Bu sunucuya katılın sorunuzu
 *   🎵  **Music(Muzik)**: `play`, `queue`, `shuffle`, `seek`, `lyrics` and **15** more!
 *   ❓  **Ticket(Destek)**: `bugbildir`!
 *   **Full list(Tam liste komutlar)** of commands: [here](https://media.discordapp.net/attachments/845233155711303701/981670379498111016/unknown.png?width=437&height=657).
+
+## 🖥️ Diğer Projelerim(My other projects)
+ * [Tunex OBİS](https://github.com/yekaranfil/OBIS-Konya-Hackathon) - The parking automation system is a hackathon project that we developed in 2 days.(Otopark otomasyon sistemi 2 günde geliştirdiğimiz bir hackathon projesidir.)
+ * [PoyrazBot2](https://github.com/yekaranfil/POYRAZ2HELIX) - My 2nd discord bot and more (2. discord botum ve daha fazlası)
 
 
 ## 📸 Ekran Görüntüleri(Screenshots)
