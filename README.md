@@ -16,8 +16,8 @@ Kodla ilgili herhangi bir hata veya sorun mu var? Bu sunucuya katılın sorunuzu
 ## ✨ Contributors
 
 
-<a href="https://github.com/SudhanPlayz/Discord-MusicBot/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=SudhanPlayz/Discord-MusicBot" />
+<a href="https://github.com/yekaranfil/poyrazbotherokumain/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=yekaranfil/poyrazbotherokumain" />
 </a>
 
-Made with :heart: and JavaScript!
+
