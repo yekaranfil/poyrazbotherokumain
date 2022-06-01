@@ -5,7 +5,7 @@
 <div align=center>
 
 [![Discord](https://img.shields.io/discord/658113349384667198.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/nP9nnAzYfF)
-[![Website](https://w7.pngwing.com/pngs/549/715/png-transparent-web-development-logo-website-web-design-symmetry-internet.png)](https://top.gg/bot/785872572620734504)
+[![Website]](https://top.gg/bot/785872572620734504)
 </div>
 
 ## 📝 (Destek Sunucusu)[Support Server](https://discord.gg/RKQFSqh56C)
