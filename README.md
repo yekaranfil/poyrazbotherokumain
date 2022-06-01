@@ -2,7 +2,7 @@
 ![see](https://i.hizliresim.com/93r66og.png)
 
 ## 📝 Tanıtım
-<div align=center>
+<div align=left>
 
 [![Discord](https://img.shields.io/discord/658113349384667198.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/nP9nnAzYfF)
 [![Website]](https://top.gg/bot/785872572620734504)
