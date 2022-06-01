@@ -1,8 +1,14 @@
 
 ## 📝 Tutorial
-Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://www.youtube.com/watch?v=p4lP96Tiv9s)
+<h1 align="center">
+  <br>
+  Egglord
+  <br>
+</h1>
 
-## 📝 [Support Server](https://discord.gg/a9SHDpD)
+<h3 align=center>A fully customizable bot built with <a href=https://github.com/discordjs/discord.js>discord.js</a></h3>
+
+## 📝 [Support Server](https://discord.gg/RKQFSqh56C)
 Kodla ilgili herhangi bir hata veya sorun mu var? Bu sunucuya katılın sorunuzu sorun. https://discord.gg/RKQFSqh56C
 
 ## 📸 Screenshots
@@ -13,11 +19,7 @@ Kodla ilgili herhangi bir hata veya sorun mu var? Bu sunucuya katılın sorunuzu
 
 
 
-## ✨ Contributors
 
 
-<a href="https://github.com/yekaranfil/poyrazbotherokumain/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=yekaranfil/poyrazbotherokumain" />
-</a>
 
 
