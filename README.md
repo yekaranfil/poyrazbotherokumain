@@ -1,4 +1,4 @@
-## 🏴 Bir TuneX digital projesidir..
+## 🏴 
 ![see](https://i.hizliresim.com/93r66og.png)
 
 ## 📝 Tanıtım
